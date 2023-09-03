@@ -1,0 +1,327 @@
+:root{
+    --background: #f7f7ff;
+    --header: #FB3640;
+    --dark: #000000;
+    --border: #8d99ae;
+     
+}
+*{
+    background-color: var(--background);
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+    background-color: var(--header);
+}
+
+header nav ul{
+
+    background-color: var(--header);
+}
+header nav ul li {
+    background-color: var(--header);
+    margin: 30px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+a{
+    font-weight: bold;
+    background-color: var(--header);
+    color: var(--background);
+    text-decoration: none;
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; 
+}
+
+h1{
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+    color: var(--dark);
+}
+
+h2{
+    text-align: end;
+    font-size: 2em;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+span[data-delvin]:hover::after{
+    content: attr(data-delvin);
+    position: absolute;
+    background-color: var(--header);
+    color: var(--background);
+    font-size: 70%;
+    padding: 10px;
+    margin-left: -500px;
+    margin-top: -70px;
+}
+
+.para{
+    flex: 4 0 300px;
+    width: 75%;
+    flex-wrap:wrap ;
+    display: flex;
+    justify-content:space-around;
+}
+
+.line{
+    flex: 1 0 200px;
+    border-right: 10px solid var(--border);
+
+}
+
+.Project{
+    margin: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    height: 200px;
+    flex: 1 ;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+#project1{
+
+    flex: 0 0 99%;
+    height: 400px;
+    background-image: url("../images/Project\ 1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#img1{
+    display: flex;
+    width: 100%;
+    margin: 0%;
+    max-height: 410px;
+    max-width: 1050px;
+}
+.imgp{
+    flex: 0 0 350px;
+    height: 200px;
+    
+}
+
+.imgp :hover{
+    display: none;
+}
+.in-project{
+    display: flex;
+    background-color: var(--header);
+    height: 50px;
+    width: 150px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-right: 200px;
+}
+#in-project1{
+    
+    height: 100px;
+    width: 250px;
+    font-size: 50px;
+    justify-self: start;
+    margin-right: 0%;
+}
+
+.orient {
+    margin-left: 400px;
+}
+
+#contact{
+    flex-wrap: wrap;
+    background-color: var(--header);
+    margin-left: 5px;
+}
+
+#contact li{
+    margin: 30px 10px;
+    display: inline-block;
+    font-size: 25px;
+    background-color: var(--header);
+    
+}
+
+footer {
+    margin-top: 10px;
+    background-color: var(--dark);
+    height: 50px;
+    text-align: center;
+    padding-top:15px ;
+}
+
+h3 {
+    background-color: var(--dark);
+}
+
+h3 a {
+    background-color: var(--dark);
+    color: var(--background);
+
+}
+ 
+#project1:hover {
+    border: 10px solid var(--header);
+}
+
+.Project:hover .imgp{
+    border: 10px solid var(--header)
+}
+
+.Project:hover {
+    border: 0px;
+}
+
+@media screen and (max-width: 1062px){
+
+    span[data-delvin]:hover::after{
+    font-size: 60%;
+    padding: 10px;
+    margin-left: -550px;
+    margin-top: -70px;
+    }
+
+    header nav{
+        justify-content: center;
+    }
+
+    .para{
+        flex: 20 0 ;
+        width: 100%;
+}
+}
+  @media screen and (max-width: 906px) {
+
+    span[data-delvin]:hover::after{
+        font-size: 60%;
+        padding: 5px;
+        margin-left: -120px;
+        margin-top: -45px;
+        }
+
+    header nav ul li{
+        font-size: 22px;
+    }
+
+    .line{
+       
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        border-right: 0px;
+        border-bottom: 10px solid var(--border);
+        justify-content: center;
+        margin-bottom: 10px;
+        flex: 1 0 100px;
+    }
+    
+    h2{
+        margin:0%;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    .para{
+            flex: 4 0 ;
+            width: 100%;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    #contact {
+        margin-left: 0%;
+    }
+    #contact li{
+        margin: 15px 5px;
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+
+    span[data-delvin]:hover::after{
+        font-size: 60%;
+        padding: 5px;
+        margin-left: -120px;
+        margin-top: -45px;
+        }
+    
+    header nav ul{
+        display: flex ;
+        flex-direction: column;
+    }
+
+    header nav ul li{
+        margin: 18px;
+    }
+
+    li {
+        text-align: center;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    
+    #contact li {
+        font-size: 22px;
+        margin: 15px;
+    }
+    .imgp{
+        flex: 0 0 300px;
+        height: 120px;
+    }
+
+    .Project{
+        height: auto;
+    }
+    .in-project{
+        margin-right: 130px;
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .orient{
+        margin-left: 250px;
+    }
+  }
